@@ -1,3 +1,17 @@
+/* nasconde freccie per input type=number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+input[type=date]{
+    padding: 0;
+}
+
 body{
     background-color:#A3947C;
     font-family: 'Rubik', sans-serif;
@@ -8,26 +22,52 @@ body{
 #top_container{
     width:90%;
     margin: auto auto;
-    height: 50px;
+    /* height: 50px; */
     position: sticky;
     position: -webkit-sticky;
     top: 0;
     background-color:#A3947C;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
 }
 
 #filtro_container{
-    display: flex;
-	float: left;
-    padding: 10px 0;
-    width: 90%;
+    display: inline-flex;
+    flex-grow: 1;
+    align-items: center;
+    text-align: center;
 }
+#filtro > *{
+    margin-right: 5px;
+    float: left;
+}
+
+.input-field {
+    font-size: 15px;
+    border: none;
+    border-bottom: 2px solid Rgba(255,224,174,1);
+    outline: none;
+    background-color: transparent;
+    text-align: center;
+    color: white;
+}
+.input-field::placeholder{
+    color: white;
+    opacity: 0.8;
+}
+.input-field:focus{
+    border-bottom: 2px solid Rgba(238, 177, 78,1);
+}
+
+
 #reset{
-    margin-left: 20px;
+    margin: 0 20px;
+    max-height: 40px;
 }
 #dati{
     width:90%;
     margin: auto auto;
-
 }
 
 table{
@@ -93,8 +133,9 @@ table{
   
 .modal-content a{
     padding: 2px;
-    border: 1px Rgba(255,224,174,0.38) solid;
+    /* border: 1px Rgba(255,224,174,0.38) solid; */
     border-radius: 3px;
+    background-color: Rgba(255,224,174,0.25);
 }
   
 
@@ -107,7 +148,7 @@ table{
   
 .close:hover,
 .close:focus {
-    color: #000;
+    color: rgb(80, 73, 61);
     text-decoration: none;
     cursor: pointer;
 }

@@ -1,0 +1,15 @@
+.codice{
+    width: 15%;
+}
+
+#codice, #nome, #cognome, #submit{
+    margin-top: 10px;
+}
+
+#codice{
+    width: 50px;
+}
+
+#nome, #cognome{
+    width: 70px;
+}
