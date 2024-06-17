@@ -1,0 +1,20 @@
+.stipulatoDa a{
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.stipulatoDa a:hover{
+    cursor: pointer;
+    background-color: rgba(255, 224, 174,0.4);
+}
+
+#id, #submit{
+    margin-top: 10px;
+}
+
+#id, #prezzo_container .input-field{
+    width: 50px;
+}
+#stipulato_da_container .input-field{
+    width: 70px;
+}

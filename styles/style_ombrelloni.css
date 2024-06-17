@@ -1,0 +1,49 @@
+#aggiungi_container{
+    flex-grow: 0;
+}
+#aggiungi_container a{
+	background-color: rgba(255,255,255,0.3);
+    border-radius: 9px;
+    display: inline-block;
+    width: 18px;
+    text-align: center;
+    margin: auto;
+}
+#aggiungi_container a:hover{
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.7);
+}
+
+.id{
+    width: 10%;
+}
+.settore{
+    width: 12%;
+}
+.numFila{
+    width: 14%; 
+}
+.numPosto{
+    width: 17%;
+}
+
+.tipologia{
+    width: 30%;
+}
+
+.elimina, .modifica{
+    width: 4%;
+}
+.tipologia a, .elimina a, .modifica a{
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.tipologia a:hover, .elimina a:hover , .modifica a:hover{
+    cursor: pointer;
+    background-color: rgba(255, 224, 174,0.4); 
+}
+
+#id{
+    width: 50px;
+}

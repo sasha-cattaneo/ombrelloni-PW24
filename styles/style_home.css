@@ -1,0 +1,21 @@
+body{
+    background-image: url("/PW24/images/sfondo_spiaggia.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;    
+
+    color: Rgba(255,255,255,1);
+
+   
+}
+main{
+    margin: auto;
+    width: 90%;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: large;
+
+    
+}
+h1,h2{
+    text-align: center;
+}

@@ -9,11 +9,11 @@
     <script src="/PW24/scripts/funzioni_ombrelloni.js" type="text/javascript"></script>
     <title>Ombrelloni</title>
 </head>
-<body onload="get_data('ombrellone',true,'tipologia');popola_filtri();show_data();">
+<body onload="get_data('ombrellone',true,'tipologia');show_data();popola_filtri();adjustStickyElementPosition();">
 	<div id="top_container">
     	<div id="filtro_container">
     		<form id="filtro" method="post" onsubmit="submitForm('ombrellone');return false;">
-                <input type="number" id="id" name="id" placeholder="Numero ombrellone">
+                <input class="input-field" type="number" id="id" name="id" placeholder="Id" min="1">
             	<select id="settore_select" name="settore">
         	    	<option value=""  selected>Settore</option>
     	        </select>
